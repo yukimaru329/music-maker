@@ -1,0 +1,126 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  body {
+	font-family: 'Indie Flower', cursive;
+	background: url(https://source.unsplash.com/random/1920x1080/?music) no-repeat center center;
+  }
+
+  .navbar {
+	width: 100%;
+	background-color: black;
+	opacity: 0.5;
+	z-index: -1;
+  }
+
+  .navbar header{
+	align-items: center;
+	color: white;
+  }
+  
+  .app {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+  }
+  header h1 {
+	margin: 10px 0px 2px 0px;
+	text-align: center;
+	font-size: 4rem;
+  }
+  header p {
+	margin: 2px 0px 25px 0px;
+	font-size: 2rem;
+	text-align: center;
+  }
+  .pads {
+	background: lightblue;
+	width: 100%;
+	display: flex;
+  }
+  .pads > div {
+	height: 100px;
+	width: 100px;
+	flex: 1;
+  }
+  .pad1 {
+	background: rgb(85, 172, 89);
+	background: violet;
+  }
+  .pad1:active {
+	background: whitesmoke;
+  }
+  .pad2 {
+	background: rgb(78, 134, 180);
+	background: indigo;
+  }
+  .pad2:active {
+	 background: whitesmoke;
+  } 
+  .pad3 {
+	background: rgb(116, 80, 182);
+	background: blue;
+  }
+  .pad3:active {
+	background: whitesmoke;
+  }
+  .pad4 {
+	background: rgb(184, 75, 75);
+	background: green;
+  }
+  .pad4:active {
+	background: whitesmoke;
+  }
+  .pad5 {
+	background: rgb(197, 199, 82);
+	background: yellow;
+  }
+  .pad5:active {
+	background: whitesmoke;
+  }
+  .pad6 {
+	background: rgb(211, 122, 81);
+	background: orange;
+  }
+  .pad6:active {
+	background: whitesmoke;
+  }
+
+  .pad7 {
+	background: rgb(192, 79, 212);
+	background: red;
+  }
+  .pad7:active {
+	background: whitesmoke;
+  }
+  
+  .visual > div {
+	position: absolute;
+	bottom: 0%;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	transform: scale(1);
+	z-index: -1;
+  }
+  
+  @keyframes jump {
+	0% {
+	  bottom: 20%;
+	  left: 0%;
+	}
+	50% {
+	  bottom: 20%;
+	  left: 50%;
+	}
+  
+	100% {
+	  bottom: 20%;
+	  left: 96%;
+	}
+  }
